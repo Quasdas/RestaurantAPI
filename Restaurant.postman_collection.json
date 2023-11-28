@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "35fa3401-b912-4ac2-9085-6571e4c8fd4e",
+		"name": "Restaurant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31032085"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/rst/like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":5,\r\n    \"resId\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/rst/like",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rst",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/rst/unlike",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":4,\r\n    \"resId\":2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/rst/unlike",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rst",
+						"unlike"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/rst/get-like",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/rst/get-like",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rst",
+						"get-like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/rst/rate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":1,\r\n    \"resId\":3,\r\n    \"amount\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/rst/rate",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rst",
+						"rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/rst/get-rate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/rst/get-rate",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"rst",
+						"get-rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/user/create-order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":1,\r\n    \"foodId\":3,\r\n    \"amount\":2,\r\n    \"code\":\"ORDER126\",\r\n    \"arrSubId\":\"1,2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/user/create-order",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"create-order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
